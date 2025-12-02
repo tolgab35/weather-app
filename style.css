@@ -1,0 +1,78 @@
+/* =========================
+   FONT IMPORT
+   ========================= */
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./assets/fonts/ClashDisplay-Regular.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./assets/fonts/ClashDisplay-Medium.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./assets/fonts/ClashDisplay-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./assets/fonts/ClashDisplay-Bold.woff2") format("woff2"),
+    url("./assets/fonts/ClashDisplay-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+/* =========================
+   RESET & BASE
+   ========================= */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Clash Display", sans-serif;
+  background: #fef7ed;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+/* Location Container */
+.header-location {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  padding: 0 40px;
+  border: 3px solid #000;
+  border-radius: 100px;
+  background: #fff;
+  transform: rotate(-3.5deg);
+}
+
+/* City Text */
+.header-location-city {
+  font-size: 32px;
+  font-weight: 600;
+}
