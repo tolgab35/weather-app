@@ -46,13 +46,26 @@ body {
   box-sizing: border-box;
   font-family: "Clash Display", sans-serif;
   background: #fef7ed;
+  color: #2c2c2c;
+}
+
+/* Text default margin reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* =========================
    HEADER
    ========================= */
 header {
-  padding: 10px 100px;
+  padding: 10px 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,4 +88,99 @@ header {
 .header-location-city {
   font-size: 32px;
   font-weight: 600;
+}
+
+/* =========================
+   MAIN WEATHER
+   ========================= */
+.main-weather {
+  margin: 30px auto;
+  width: 1200px;
+  height: 600px;
+  background: #fff;
+  box-shadow: 6px 6px 0 #000;
+  border: 4px solid #000;
+  display: flex;
+  align-items: center;
+}
+
+.main-weather-temperature {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-weather-temperature .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-weather-temperature .container .current-weather {
+  font-size: 36px;
+  font-weight: 600;
+  color: #9333ea;
+}
+
+.main-weather-temperature .container h1 {
+  font-size: 122px;
+  font-weight: 600;
+}
+
+.main-weather-temperature .container .status {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.main-weather-temperature .container .switch {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 20px;
+  width: 250px;
+  background: #ffdc58;
+  box-shadow: 6px 6px 0 #000;
+  border: 4px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-weather-temperature .container .weather-details {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.main-weather-temperature .container .weather-details .humidity,
+.main-weather-temperature .container .weather-details .wind {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main-weather-temperature .container .weather-details .humidity-value,
+.main-weather-temperature .container .weather-details .wind-value {
+  display: flex;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.main-weather-temperature .container .weather-details .humidity-value p,
+.main-weather-temperature .container .weather-details .wind-value p {
+  margin-left: 5px;
+}
+
+.main-weather-icon {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
