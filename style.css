@@ -94,7 +94,7 @@ header {
    MAIN WEATHER
    ========================= */
 .main-weather {
-  margin: 30px auto;
+  margin: 60px auto;
   width: 1200px;
   height: 600px;
   background: #fff;
@@ -146,6 +146,10 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.main-weather-temperature .container .switch:active {
+  box-shadow: none;
+  transform: translate(6px, 6px);
 }
 
 .main-weather-temperature .container .weather-details {
@@ -215,7 +219,7 @@ header {
 }
 
 .hour-week-toggle .hourly {
-  border-right: 3px solid #000;
+  border-right: 2px solid #000;
 }
 
 .hour-week-toggle .active {
@@ -232,7 +236,7 @@ header {
   width: 1500px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hour-week-container .left-arrow,
@@ -287,7 +291,7 @@ header {
    ========================= */
 .index-tips-container {
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   width: 1200px;
   height: 450px;
   display: flex;
@@ -303,7 +307,7 @@ header {
   margin-left: 50px;
   color: #fff;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 42px;
 }
 
 .index-tips-container .uv-index,
