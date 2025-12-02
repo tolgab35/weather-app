@@ -1,4 +1,4 @@
-const apiKey = "25cb96287214ca93e89e622f2aa9a6e6";
+const apiKey = "YOUR_API_KEY";
 
 let isCelsius = true;
 let weatherData = null;
