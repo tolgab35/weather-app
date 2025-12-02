@@ -185,6 +185,9 @@ header {
   align-items: center;
 }
 
+/* =========================
+   HOUR-WEEK TOGGLE
+   ========================= */
 .hour-week-toggle {
   margin: 50px auto;
   width: 300px;
@@ -196,6 +199,7 @@ header {
   border-radius: 25px;
   overflow: hidden;
 }
+
 .hour-week-toggle .hourly,
 .hour-week-toggle .weekly {
   width: 50%;
@@ -210,10 +214,71 @@ header {
   align-items: center;
   cursor: pointer;
 }
+
 .hour-week-toggle .hourly {
   border-right: 3px solid #000;
 }
+
 .hour-week-toggle .active {
   background-color: #f472b6;
   color: #fff;
+}
+
+/* =========================
+   HOUR-WEEK CARDS
+   ========================= */
+.hour-week-container {
+  margin: 0 auto;
+  margin-bottom: 150px;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hour-week-container .left-arrow,
+.hour-week-container .right-arrow {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #000;
+}
+
+.hour-week-container .card1,
+.hour-week-container .card2,
+.hour-week-container .card3 {
+  width: 320px;
+  height: 500px;
+  background: #f472b6;
+  box-shadow: 6px 6px 0 #000;
+  border: 4px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hour-week-container .inside-card {
+  width: 260px;
+  height: 400px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  gap: 5px;
+}
+
+.hour-week-container .inside-card .status {
+  font-weight: 500;
+}
+
+.hour-week-container .inside-card .precipitation {
+  font-weight: 400;
 }
